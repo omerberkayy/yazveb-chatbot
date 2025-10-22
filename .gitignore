@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.env
+.venv/
+env/
+venv/
+
+# --- Colab / Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- LangChain / Vector Store ---
+data/processed/chroma_db/
+chroma_db/
+*.sqlite
+*.faiss
+*.pkl
+
+# --- Cache & Temp ---
+cache/
+tmp/
+__cache__/
+
+# --- Secrets / Config ---
+*.key
+*.pem
+*.crt
+secrets/
+config.yaml
+config.json
+
+# --- Gradio / Hugging Face ---
+gradio_cached_examples/
+gradio_tmp/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
