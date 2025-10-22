@@ -4,5 +4,6 @@ langchain-text-splitters
 langchain-chroma
 langchain-huggingface
 langchain-core
-google-generativeai
+langchain-google-genai
 gradio
+
