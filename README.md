@@ -1,23 +1,23 @@
 🤖 YAZVEB Chatbot
 
 LangChain + Gemini API + Gradio tabanlı RAG (Retrieval-Augmented Generation) sohbet botu
-Bu proje, yapay zeka ve veri bilimi öğrenci topluluğu hakkında bilgi içeren metin dosyalarını işleyip, kullanıcı sorularına bağlama dayalı akıllı yanıtlar verir.
+
+Bu proje, Yapay Zeka ve Veri Bilimi Topluluğu hakkında bilgi içeren metin dosyalarını işleyip, kullanıcı sorularına bağlama dayalı akıllı yanıtlar üretir.
 
 ⸻
 
 🎯 Projenin Amacı
 
-Bu proje, Yapay Zeka ve Veri Bilimi Topluluğu üyelerinin topluluk hakkında daha kolay bilgi edinmelerini sağlamak amacıyla geliştirilmiştir.
-Proje, topluluk başkanı olarak tarafımdan yürütülmüş olup, kullanıcıların geçmiş etkinlikler, genel bilgiler ve iletişim detaylarına hızlı şekilde ulaşabilmelerini hedeflemektedir.
+Bu proje, topluluk üyelerinin topluluk hakkında daha kolay bilgi edinmelerini sağlamak amacıyla geliştirilmiştir.
+Topluluk başkanı olarak tarafımdan yürütülmüş olup, kullanıcıların geçmiş etkinlikler, genel bilgiler ve iletişim detaylarına hızlı şekilde ulaşabilmeleri hedeflenmiştir.
 
 ⸻
 
 📊 Veri Seti Hakkında
 
-Veri seti, topluluğun Google Drive dizininde bulunan kaynaklar kullanılarak hazırlanmıştır.
-Aşağıdaki dosyalar kullanılarak veri seti oluşturulmuştur:
+Veri seti, topluluğun Google Drive dizininde yer alan kaynaklardan oluşturulmuştur:
 	•	hakkında.txt → Topluluk hakkında genel bilgiler
-	•	eski_etkinlikler.txt → Topluluğun geçmiş etkinliklerine ait kayıtlar
+	•	eski_etkinlikler.txt → Geçmiş etkinlik kayıtları
 	•	iletişim.txt → Topluluk iletişim bilgileri
 
 Bu dosyalar birleştirilerek, topluluk verilerini temsil eden bütüncül bir veri seti elde edilmiştir.
@@ -26,34 +26,33 @@ Bu dosyalar birleştirilerek, topluluk verilerini temsil eden bütüncül bir ve
 
 🚀 Proje Özeti
 
-Bu chatbot, LangChain ve Google Gemini (Generative AI) modellerini kullanarak,
-önceden hazırlanmış topluluk metinlerinden anlamlı cevaplar üretir.
-Kullanıcı sorularını vektör tabanlı benzerlik (semantic search) ile ilgili dokümanlarla eşleştirir
-ve bağlama uygun yanıt üretir.
+Chatbot, LangChain ve Google Gemini (Generative AI) modellerini kullanarak önceden hazırlanmış topluluk metinlerinden anlamlı, bağlama uygun cevaplar üretir.
+Kullanıcı girdileri, vektör tabanlı benzerlik (semantic search) yöntemiyle analiz edilerek en ilgili dokümanlarla eşleştirilir.
 
-Teknolojiler:
-	•	🧠 LangChain
-	•	🔍 Chroma (vektör veritabanı)
-	•	🗣️ Google Gemini API
-	•	💬 Gradio arayüzü
-	•	💾 Hugging Face Embeddings (multilingual-e5-base)
+🔧 Kullanılan Teknolojiler
+	•	🧠 LangChain – RAG pipeline yönetimi
+	•	🔍 ChromaDB – Vektör veritabanı
+	•	🗣️ Google Gemini API – Yanıt üretimi
+	•	💬 Gradio – Kullanıcı arayüzü
+	•	💾 Hugging Face Embeddings (multilingual-e5-base) – Metin gömme modeli
 
- ⸻
+⸻
 
 🧠 Elde Edilen Sonuçlar
 
-Oluşturulan veri seti, ChromaDB içerisine gömülmüş ve RAG (Retrieval-Augmented Generation) yaklaşımı kullanılarak sorgulanabilir hale getirilmiştir.
-Kullanıcı bir girdi (soru) yazdığında sistem:
-	1.	Girdiye en yakın 3 bağlamsal sonucu ChromaDB’den getirir.
-	2.	Bu sonuçları kullanarak Gemini modeli ile kullanıcıya anlamlı ve bilgilendirici bir yanıt üretir.
+Oluşturulan veri seti, ChromaDB içerisine gömülmüş ve RAG (Retrieval-Augmented Generation) yaklaşımıyla sorgulanabilir hale getirilmiştir.
 
-Bu sayede kullanıcılar, toplulukla ilgili sorularına doğrudan, doğru ve bağlama uygun yanıtlar alabilmektedir.
+Kullanıcı bir soru sorduğunda:
+	1.	Girdiye en yakın 3 bağlamsal sonuç ChromaDB’den alınır.
+	2.	Bu sonuçlar Gemini modeli ile birleştirilerek anlamlı ve bilgilendirici bir yanıt oluşturulur.
+
+Bu sayede kullanıcılar, toplulukla ilgili sorularına doğrudan, doğru ve bağlama uygun yanıtlar alabilir.
 
 ⸻
 
 🧩 Gereksinimler
 
-Bu proje için aşağıdaki kütüphaneler gereklidir:
+Aşağıdaki kütüphaneler gereklidir:
 
 langchain
 langchain-community
@@ -63,7 +62,7 @@ langchain-huggingface
 langchain-google-genai
 gradio
 
-🔹 Colab veya terminal üzerinden tek komutla yükleyebilirsin:
+🧱 Tek komutla yükleme:
 
 pip install -U langchain langchain-community langchain-chroma langchain-text-splitters langchain-huggingface langchain-google-genai gradio
 
@@ -102,6 +101,9 @@ API anahtarını Google AI Studio üzerinden alabilirsin.
 
 .env dosyasına ekle:
 
+GOOGLE_API_KEY=AIzaSy...
+
+
 ⸻
 
 💻 Uygulamayı Çalıştırma
@@ -110,6 +112,12 @@ API anahtarını Google AI Studio üzerinden alabilirsin.
 
 python app.py
 
+Terminalde aşağıdaki bağlantıyı göreceksin:
+
+Running on local URL: http://127.0.0.1:7860/
+
+Tarayıcıda aç → http://127.0.0.1:7860
+
 ⸻
 
 📂 Proje Yapısı
@@ -117,14 +125,15 @@ python app.py
 yazveb-chatbot/
  ├── app.py                    # Gradio arayüzü
  ├── requirements.txt          # Bağımlılıklar
- ├── .gitignore                # Gizli / gereksiz dosyaları hariç tutar
+ ├── .gitignore                # Gizli / gereksiz dosyalar
  └── data/
      ├── raw/                  # Ham metin verileri
      └── processed/
          └── chroma_db/        # (ignore edilir)
 
+
 ⸻
 
-Deploy Linki
+🌐 Deploy Linki
 
-https://huggingface.co/spaces/omeberkaycoskun/yazveb
+🪄 Hugging Face Spaces’ta Görüntüle
