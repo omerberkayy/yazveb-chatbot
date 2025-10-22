@@ -44,9 +44,9 @@ Oluşturulan veri seti, ChromaDB içerisine gömülmüş ve RAG (Retrieval-Augme
 
 Kullanıcı bir soru sorduğunda:
 	1.	Girdiye en yakın 3 bağlamsal sonuç ChromaDB’den alınır.
-	2.	Bu sonuçlar Gemini modeli ile birleştirilerek anlamlı ve bilgilendirici bir yanıt oluşturulur.
+	2.	Bu sonuçlar, Gemini modeli ile birleştirilerek anlamlı ve bilgilendirici bir yanıt oluşturulur.
 
-Bu sayede kullanıcılar, toplulukla ilgili sorularına doğrudan, doğru ve bağlama uygun yanıtlar alabilir.
+Bu sayede kullanıcılar, toplulukla ilgili sorularına doğrudan, doğru ve bağlama uygun yanıtlar alabilirler.
 
 ⸻
 
@@ -62,7 +62,7 @@ langchain-huggingface
 langchain-google-genai
 gradio
 
-🧱 Tek komutla yükleme:
+🧱 Tek Komutla Yükleme
 
 pip install -U langchain langchain-community langchain-chroma langchain-text-splitters langchain-huggingface langchain-google-genai gradio
 
@@ -123,17 +123,18 @@ Tarayıcıda aç → http://127.0.0.1:7860
 📂 Proje Yapısı
 
 yazveb-chatbot/
- ├── app.py                    # Gradio arayüzü
- ├── requirements.txt          # Bağımlılıklar
- ├── .gitignore                # Gizli / gereksiz dosyalar
- └── data/
-     ├── raw/                  # Ham metin verileri
-     └── processed/
-         └── chroma_db/        # (ignore edilir)
+├── app.py                    # Gradio arayüzü
+├── requirements.txt          # Bağımlılıklar
+├── .gitignore                # Gizli / gereksiz dosyalar
+└── data/
+    ├── raw/                  # Ham metin verileri
+    └── processed/
+        └── chroma_db/        # (ignore edilir)
 
 
 ⸻
 
 🌐 Deploy Linki
 
-🪄 Hugging Face Spaces’ta Görüntüle
+🪄 Hugging Face Spaces’ta Görüntüle:
+🔗 https://huggingface.co/spaces/omeberkaycoskun/yazveb
