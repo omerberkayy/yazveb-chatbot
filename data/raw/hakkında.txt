@@ -1,0 +1,11 @@
+﻿# Hakkında
+## Topluluk Adı
+Yapay Zeka ve Veri Bilimi Topluluğu
+## Kuruluş Yılı
+2024
+## Misyon
+Katılımcıların AI/Veri Bilimi bilgi, beceri ve liderlik yetkinliklerini geliştirmek.
+## Vizyon 
+Farklı disiplinleri bir araya getirerek teknolojik gelişimi destekleyen öncü bir platform olmak.
+## Hakkında
+2024'te kurulan topluluk, yapay zeka ve veri bilimi alanında liderlik ve teknik becerileri geliştirerek, teknolojinin gücüyle topluma değer katan projeler üreten öncü bir platform olmayı hedefler.

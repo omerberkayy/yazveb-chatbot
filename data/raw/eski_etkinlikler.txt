@@ -1,0 +1,48 @@
+﻿# Etkinlik Adı
+IRSYSC kongresi 2024
+## Ana Konular
+Veri Analizi, Üretken Yapay Zeka (GenAI), Yapay Zeka ve Sinema
+## Oturum 1 (Eğitim)
+SAS Programı 
+## Oturum 2 (Söyleşi)
+Data Science Journey with Generative AI 
+## Oturum 3 (Sunum)
+"Bilge 3071" Yapay Zeka Filmi 
+## Etkinlik Özeti
+Kulübün ilk etkinliğinde SAS eğitimi, GenAI söyleşisi ve yapay zeka filmi sunumu gerçekleştirildi.
+# Etkinlik Adı
+Makine Öğrenmesi ile Görüntü İşleme Eğitimi
+## Konu
+Makine Öğrenmesi, Görüntü İşleme, OpenCV
+## İşlenen Teknikler
+OpenCV ile Görüntü İşleme Teknikleri, Gerçek Zamanlı Case Çözümleri
+## Etkinlik Özeti
+Coding4Up ile düzenlenen eğitimde katılımcılar, OpenCV ile Makine Öğrenmesi ve Görüntü İşleme tekniklerini öğrendi.
+# Etkinlik Adı
+Excel ile Veri Analizi Eğitimi
+## Ana Konu
+Veri Analizi
+## Kullanılan Araç
+Microsoft Excel
+## Odak Noktası
+Gerçek Veri Setleri Üzerinden Analiz Yapma, İleri Seviye Teknikler, İçgörü Elde Etme
+## Etkinlik Özeti
+Excel'in veri analizi süreçlerindeki gücünü keşfetmek amacıyla, gerçek veri setleriyle ileri seviye tekniklerin uygulandığı eğitim gerçekleştirildi.
+#Etkinlik Adı
+Yapay Zekâ ve Sinema Etkinliği(Mersin)
+## Ana Konu
+Yapay Zekânın Sinema Dünyasındaki Etkileri
+## Kapsanan Alt Başlıklar
+LLM'ler, Açık Kaynak Teknolojiler, Görsel/Video Üretim, Ses Modelleme, Film Yapım Süreçleri
+## Etkinlik Özeti
+Mersin'de, yapay zekânın sinema dünyasına etkileri (LLM'ler, görsel/video üretimi, ses modelleme, yapay zekâ ile film yapımı) keşfedildi.
+#Etkinlik Adı
+Geleceğin Dili: Yapay Zeka & Veri Bilimi
+## Ana Konu
+Yapay Zeka ve Veri Bilimi
+## İçerik Odakları
+Güncel AI/Veri Bilimi Trendleri, Gerçek Kariyer Hikayeleri, Uygulamalı Bilgiler, Soru-Cevap Oturumları
+## Etkinlik Amacı
+Veri okyanusunda yol alma ve yapay zeka ile fikirleri gerçeğe dönüştürme yöntemlerini keşfetme.
+## Etkinlik Özeti
+Güncel yapay zeka ve veri bilimi trendleri, kariyer hikayeleri ve uygulamalı bilgiler uzmanlarla birlikte keşfedildi.
