@@ -1,59 +1,125 @@
-🤖 YAZVEB Chatbot
+# 🤖 YAZVEB RAG Chatbot
 
-LangChain + Gemini API + Gradio tabanlı RAG (Retrieval-Augmented Generation) sohbet botu
+**LangChain + Gemini API + Gradio tabanlı Gelişmiş Bilgi Getirimi (RAG) Sohbet Botu**
 
-Bu proje, Yapay Zeka ve Veri Bilimi Topluluğu hakkında bilgi içeren metin dosyalarını işleyip, kullanıcı sorularına bağlama dayalı akıllı yanıtlar üretir.
+Bu proje, bir Yapay Zeka ve Veri Bilimi Topluluğu hakkındaki metin verilerini işleyerek, kullanıcılardan gelen sorulara **bağlama dayalı, doğru ve akıllı yanıtlar** üretmek üzere tasarlanmıştır.
 
-⸻
+-----
 
-🎯 Projenin Amacı
+## 🌐 Canlı Demo
+**[https://huggingface.co/spaces/omeberkaycoskun/yazveb](https://huggingface.co/spaces/omeberkaycoskun/yazveb)**
 
-Bu proje, topluluk üyelerinin topluluk hakkında daha kolay bilgi edinmelerini sağlamak amacıyla geliştirilmiştir.
-Topluluk başkanı olarak tarafımdan yürütülmüş olup, kullanıcıların geçmiş etkinlikler, genel bilgiler ve iletişim detaylarına hızlı şekilde ulaşabilmeleri hedeflenmiştir.
+![YAZVEB Chatbot Uygulama Demosu](assets/demo.gif)
 
-⸻
+-----
 
-📊 Veri Seti Hakkında
+## ✨ Temel Özellikler ve Amaç
 
-Veri seti, topluluğun Google Drive dizininde yer alan kaynaklardan oluşturulmuştur:
-	•	hakkında.txt → Topluluk hakkında genel bilgiler
-	•	eski_etkinlikler.txt → Geçmiş etkinlik kayıtları
-	•	iletişim.txt → Topluluk iletişim bilgileri
+Bu RAG (Retrieval-Augmented Generation) sohbet botunun temel hedefi, topluluk üyelerinin topluluk hakkında bilgi edinme sürecini kolaylaştırmaktır.
 
-Bu dosyalar birleştirilerek, topluluk verilerini temsil eden bütüncül bir veri seti elde edilmiştir.
+  * **Hızlı Erişim:** Topluluk üyelerinin geçmiş etkinlikler, genel bilgiler ve iletişim detaylarına saniyeler içinde ulaşmasını sağlar.
+  * **Bağlamsal Yanıtlar:** Gelişmiş yapay zeka modelleri sayesinde, basit aramaların ötesine geçerek sorulara anlamlı ve bilgilendirici yanıtlar sunar.
+  * **Proje Yürütücüsü:** Topluluk başkanı olarak tarafımdan (Ömer Berkay ÇOŞKUN) yürütülmüştür.
 
-⸻
+-----
 
-🚀 Proje Özeti
+## 🚀 Proje Mimarisi ve Teknoloji Yığını
 
-Chatbot, LangChain ve Google Gemini (Generative AI) modellerini kullanarak önceden hazırlanmış topluluk metinlerinden anlamlı, bağlama uygun cevaplar üretir.
-Kullanıcı girdileri, vektör tabanlı benzerlik (semantic search) yöntemiyle analiz edilerek en ilgili dokümanlarla eşleştirilir.
+Chatbot, LangChain çerçevesini ve Google Gemini'ın üretken yapay zeka yeteneklerini kullanarak önceden hazırlanmış metinlerden anlamlı cevaplar üretir.
 
-🔧 Kullanılan Teknolojiler
-	•	🧠 LangChain – RAG pipeline yönetimi
-	•	🔍 ChromaDB – Vektör veritabanı
-	•	🗣️ Google Gemini API – Yanıt üretimi
-	•	💬 Gradio – Kullanıcı arayüzü
-	•	💾 Hugging Face Embeddings (multilingual-e5-base) – Metin gömme modeli
+Kullanıcı girdisi, **vektör tabanlı benzerlik (semantic search)** yöntemiyle analiz edilerek en ilgili doküman parçalarıyla eşleştirilir.
 
-⸻
+---
 
-🧠 Elde Edilen Sonuçlar
+### 🔬 Geliştirme Süreci ve Teknik Görüntüler
+
+Projenin RAG (Retrieval-Augmented Generation) akışının önemli aşamaları ve geliştirme sırasında oluşturulan temel mimariler aşağıda gösterilmiştir:
+
+<table style="width:100%; border:none;">
+    <tr>
+        <td style="width: 50%; padding: 5px; text-align: center; border: none;">
+            <img src="assets/screenshot1.png" alt="Verilerin Parçalara Ayrılması" style="width: 100%;">
+            <p style="font-size: 0.9em; margin-top: 5px;">1. Verilerin Okunması ve Parçalara Ayrılması</p>
+        </td>
+        <td style="width: 50%; padding: 5px; text-align: center; border: none;">
+            <img src="assets/screenshot2.png" alt="Vektör Uzayına Dönüştürme ve Depolama" style="width: 100%;">
+            <p style="font-size: 0.9em; margin-top: 5px;">2. Verilerin Vektör Uzayına Dönüştürülmesi</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 50%; padding: 5px; text-align: center; border: none;">
+            <img src="assets/screenshot3.png" alt="Prompt ile Bağlamın Birleştirilmesi" style="width: 100%;">
+            <p style="font-size: 0.9em; margin-top: 5px;">3. Geri Getirilen Bağlamın Prompt'a Enjekte Edilmesi</p>
+        </td>
+        <td style="width: 50%; padding: 5px; text-align: center; border: none;">
+            <img src="assets/screenshot4.png" alt="Uygulamanın İlk Cevabı" style="width: 100%;">
+            <p style="font-size: 0.9em; margin-top: 5px;">4. Uygulamanın İlk Ürettiği Cevap</p>
+        </td>
+    </tr>
+</table>
+
+---
+
+### 🛠️ Kullanılan Teknolojiler
+
+| Kategori | Teknoloji | Açıklama |
+| :--- | :--- | :--- |
+| **RAG Çatısı** | 🧠 **LangChain** | Tüm RAG pipeline'ının yönetimi ve orkestrasyonu. |
+| **LLM** | 🗣️ **Google Gemini API** | Geri getirilen bağlamdan nihai yanıtın üretilmesi. |
+| **Vektör DB** | 🔍 **ChromaDB** | Topluluk verilerinin vektör gömülmelerinin depolanması. |
+| **Gömme Modeli** | 💾 **Hugging Face Embeddings** (`multilingual-e5-base`) | Metinlerin vektör uzayına dönüştürülmesi. |
+| **Arayüz** | 💬 **Gradio** | Hızlı ve etkileşimli bir kullanıcı arayüzü sunulması. |
+
+-----
+
+## 📊 Veri Seti Yapısı
+
+Veri seti, topluluğun Google Drive dizinindeki kaynaklardan derlenmiştir ve topluluk bilgilerini bütüncül olarak temsil eder:
+
+  * `hakkında.txt`: Topluluk hakkında **genel bilgiler** ve misyon.
+  * `eski_etkinlikler.txt`: Geçmişte düzenlenmiş **etkinlik kayıtları** ve detayları.
+  * `iletişim.txt`: Topluluğun **iletişim bilgileri** ve sosyal medya linkleri.
+
+Bu dosyalar işlenerek tek bir bütünleşik veri seti elde edilmiştir.
+
+-----
+
+## 🧠 Nasıl Çalışır? (RAG İş Akışı)
 
 Oluşturulan veri seti, ChromaDB içerisine gömülmüş ve RAG (Retrieval-Augmented Generation) yaklaşımıyla sorgulanabilir hale getirilmiştir.
 
-Kullanıcı bir soru sorduğunda:
-	1.	Girdiye en yakın 3 bağlamsal sonuç ChromaDB’den alınır.
-	2.	Bu sonuçlar Gemini modeli ile birleştirilerek anlamlı ve bilgilendirici bir yanıt oluşturulur.
+1.  **Soru Girdisi:** Kullanıcı sorusu sisteme girilir.
+2.  **Geri Getirme (Retrieval):** Kullanıcı girdisine **en yakın 3 bağlamsal doküman parçası** ChromaDB'den alınır (semantic search).
+3.  **Üretim (Generation):** Geri getirilen bu bağlam parçaları, bir **prompt** ile birlikte Gemini modeline gönderilir.
+4.  **Yanıt:** Gemini modeli, bağlama dayalı, doğru ve bilgilendirici bir nihai yanıt oluşturur.
 
-Bu sayede kullanıcılar, toplulukla ilgili sorularına doğrudan, doğru ve bağlama uygun yanıtlar alabilir.
+-----
 
-⸻
+## 📂 Proje Yapısı
 
-🧩 Gereksinimler
 
-Aşağıdaki kütüphaneler gereklidir:
 
+```bash
+yazveb-chatbot/
+├── assets/                  
+├── data/
+│   ├── processed/           
+│   │   └── chroma_db/       
+│   └── raw/                 
+├── app.py                   
+├── requirements.txt         
+└── README.md
+```
+
+-----
+
+## ⚙️ Kurulum ve Çalıştırma
+
+### 1️⃣ Gereksinimler
+
+Aşağıdaki Python kütüphaneleri gereklidir:
+
+```text
 langchain
 langchain-community
 langchain-chroma
@@ -61,65 +127,69 @@ langchain-text-splitters
 langchain-huggingface
 langchain-google-genai
 gradio
+sentence-transformers
+python-dotenv
+```
 
-🧱 Tek komutla yükleme:
+#### Tek Komutla Yükleme
 
-pip install -U langchain langchain-community langchain-chroma langchain-text-splitters langchain-huggingface langchain-google-genai gradio
+```bash
+pip install -U langchain langchain-community langchain-chroma langchain-text-splitters langchain-huggingface langchain-google-genai gradio sentence-transformers python-dotenv
+```
 
+### 2️⃣ Projeyi Klonlama
 
-⸻
-
-⚙️ Kurulum Adımları
-
-1️⃣ Reponu Klonla
-
+```bash
 git clone https://github.com/omerberkayy/yazveb-chatbot.git
 cd yazveb-chatbot
+```
 
-2️⃣ Gerekli Bağımlılıkları Yükle
+### 3️⃣ API Anahtarını Ekleme
 
-pip install -r requirements.txt
+Bu proje Google Gemini API'yi kullanır. API anahtarınızı Google AI Studio üzerinden alabilirsiniz.
 
-3️⃣ Veri Klasörünü Kontrol Et
+Proje kök dizininde bir **`.env`** dosyası oluşturun ve anahtarınızı ekleyin:
 
-Metin dosyalarının data/raw/ dizininde olduğundan emin ol:
-
-data/
- ├── raw/
- │   ├── topluluk_bilgileri.txt
- │   ├── etkinlikler.txt
- │   └── iletişim.txt
-
-💡 data/processed/chroma_db/ klasörü .gitignore içinde olmalıdır (embedding verileri commit edilmemelidir).
-
-⸻
-
-🔐 API Anahtarı Ekleme
-
-Proje, Google Gemini API kullanır.
-API anahtarını Google AI Studio üzerinden alabilirsin.
-
-.env dosyasına ekle:
-
+```ini
+# .env dosyası
 GOOGLE_API_KEY=AIzaSy...
+```
 
+### 4️⃣ Veri Klasörü Kontrolü
 
-⸻
+Metin dosyalarının aşağıdaki yapıda olduğundan emin olun:
 
-💻 Uygulamayı Çalıştırma
+```text
+data/
+└── raw/
+    ├── hakkında.txt
+    ├── eski_etkinlikler.txt
+    └── iletişim.txt
+```
 
-🔸 Yerel Ortamda
+> 💡 **Not:** `data/processed/chroma_db/` klasörünün (embedding verileri) `.gitignore` içinde yer aldığından emin olun, bu veriler versiyon kontrolüne dahil edilmemelidir.
 
+### 5️⃣ Uygulamayı Yerel Olarak Çalıştırma
+
+```bash
 python app.py
+```
 
-Terminalde aşağıdaki bağlantıyı göreceksin:
+Terminalde yerel bağlantıyı göreceksiniz:
 
+```text
 Running on local URL: http://127.0.0.1:7860/
+```
 
-Tarayıcıda aç → http://127.0.0.1:7860
+Tarayıcınızda açın: **[http://127.0.0.1:7860](http://127.0.0.1:7860)**
 
-⸻
+---
 
-🌐 Deploy Linki
+## 📞 İletişim
 
-https://huggingface.co/spaces/omeberkaycoskun/yazveb
+Proje ile ilgili sorularınız veya geri bildirimleriniz için benimle iletişime geçebilirsiniz.
+
+* **Yürütücü:** Ömer Berkay ÇOŞKUN
+* **GitHub:** [https://github.com/omerberkayy](https://github.com/omerberkayy)
+* **LinkedIn:** [https://www.linkedin.com/in/ömer-berkay-coşkun-2a8796283](https://www.linkedin.com/in/ömer-berkay-coşkun-2a8796283) 
+* **E-posta:** [omerberkay18@gmail.com](mailto:omerberkay18@gmail.com) 
